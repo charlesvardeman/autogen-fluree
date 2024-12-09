@@ -1,3 +1,13 @@
+[project]
+name = "autogen-fluree"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "autogen-core==0.4.0.dev9",
+    "rdflib>=7.1.1",
+]
 [build-system]
 requires = ["setuptools>=64.0"]
 build-backend = "setuptools.build_meta"
