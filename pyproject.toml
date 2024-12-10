@@ -6,8 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "autogen-core==0.4.0.dev9",
+    "pretzelai>=4.2.11",
+    "python-dotenv>=1.0.1",
     "rdflib>=7.1.1",
 ]
-[build-system]
-requires = ["setuptools>=64.0"]
-build-backend = "setuptools.build_meta"

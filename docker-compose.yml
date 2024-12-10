@@ -1,19 +1,13 @@
-version: '3.8'
-
 services:
-  fluree-n1:
-    image: fluree/ledger:latest
-    container_name: fluree1
-    networks:
-      - default
-    environment:
-      # Example group configuration (modify as needed)
-      fdb_group_servers: server2@host.docker.internal:9790,server1@192.168.1.12:9790
-      fdb_group_this_server: server2
-      # Additional optional environment variables can be added here
-    ports:
-      - "8090:8090"  # HTTP API port
-      - "9790:9790"  # Peer-to-peer communication port
-    volumes:
-      - ./fluree-data:/var/lib/fluree  # Persist Fluree data
-    restart: unless-stopped
+   fluree-n1:
+     image: fluree/ledger:latest
+     container_name: fluree1
+     networks:
+       - default
+     ports:
+       - "8090:8090"  # HTTP API port
+     volumes:
+       - ./fluree-data:/var/lib/fluree  # Persist Fluree data
+     restart: unless-stopped
+
+
